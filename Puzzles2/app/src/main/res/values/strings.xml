@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Puzzles</string>
+    <string name="initial_welcome">Welcome to the Problem Solver! Please press one of the buttons below to solve a problem.</string>
+    <string name="FWGC">FWCG</string>
+    <string name="Puzzle">8-Puzzle</string>
+    <string name="FWGC_Welcome">Welcome to the Farmer, Wolf, Goat, Cabbage Problem!</string>
+    <string name="FWGC_intro">\tA farmer and his wolf, goat, and cabbage come to the edge of a river they wish to cross. There is a boat at the river\'s edge that only the farmer can row. The  farmer can take at most one other object besides himself
+        on a crossing, but if the wolf is ever left with the goat,
+        the wolf will eat the goat; similarly if the goat is left
+        with the cabbage, the goat will eat the cabbage. Devise a
+        sequence of crossings of the river so that all four characters
+        arrive safely on the other side.</string>
+    <string name="puzzle_Welcome">Welcome to the 8-Puzzle Problem!</string>
+    <string name="puzzle_intro">\tYou are given a board in which numbered tiles can slide around.
+        There is one blank space that holds no tile. A legal move
+        consists of sliding a tile into the blank space if the tile
+        is adjacent to it. the goal is to move tiles around until the
+        board looks like the final state below.</string>
+    <string name="begin">Begin</string>
+    <string name="farmer_currState">problem.getCurrentState();</string>
+    <string name="self">Self</string>
+    <string name="wolf">Wolf</string>
+    <string name="goat">Goat</string>
+    <string name="cabbage">Cabbage</string>
+    <string name="illegalMove">Illegal Move. Try again</string>
+    <string name="finished">You solved the problem! Congratulations!</string>
+    <string name="solve">Solve</string>
+    <string name="next">Next</string>
+    <string name="reset">Reset</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="clickTile">Click a tile to move it into the space</string>
+</resources>

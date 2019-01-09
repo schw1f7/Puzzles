@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tileSize">75dp</dimen>
+    <dimen name="gridSize">225dp</dimen>
+</resources>

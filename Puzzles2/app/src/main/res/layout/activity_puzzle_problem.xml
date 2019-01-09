@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Puzzle_problem">
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_instruct"
+        app:layout_constraintVertical_bias="0.024"
+        app:rowCount="3">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/tileStyle"
+            android:minWidth="75dp"
+            android:minHeight="75dp"
+            android:onClick="tryMove"
+            android:text="@string/one"
+            android:textSize="30sp"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/tileStyle"
+            android:minWidth="75dp"
+            android:minHeight="75dp"
+            android:onClick="tryMove"
+            android:text="@string/two"
+            android:textSize="30sp"
+            app:layout_column="1"
+            app:layout_row="0"
+            tools:maxWidth="75dp" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/tileStyle"
+            android:minWidth="75dp"
+            android:minHeight="75dp"
+            android:onClick="tryMove"
+            android:text="@string/three"
+            android:textSize="30sp"
+            app:layout_column="0"
+            app:layout_row="2"
+            tools:maxWidth="75dp" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/tileStyle"
+            android:minWidth="75dp"
+            android:minHeight="75dp"
+            android:onClick="tryMove"
+            android:text="@string/four"
+            app:layout_column="2"
+            app:layout_columnSpan="1"
+            app:layout_row="1"
+            app:layout_rowSpan="1"
+            tools:maxWidth="75dp" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/tileStyle"
+            android:minWidth="75dp"
+            android:minHeight="75dp"
+            android:onClick="tryMove"
+            android:text="@string/five"
+            android:textSize="30sp"
+            app:layout_column="0"
+            app:layout_row="0"
+            tools:maxWidth="75dp" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/tileStyle"
+            android:minWidth="75dp"
+            android:minHeight="75dp"
+            android:onClick="tryMove"
+            android:text="@string/six"
+            android:textSize="30sp"
+            app:layout_column="1"
+            app:layout_row="2"
+            tools:maxWidth="75dp" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/tileStyle"
+            android:minWidth="75dp"
+            android:minHeight="75dp"
+            android:onClick="tryMove"
+            android:text="@string/seven"
+            android:textSize="30sp"
+            app:layout_column="2"
+            app:layout_row="0"
+            tools:maxWidth="75dp" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/tileStyle"
+            android:minWidth="75dp"
+            android:minHeight="75dp"
+            android:onClick="tryMove"
+            android:text="@string/eight"
+            android:textSize="30sp"
+            app:layout_column="0"
+            app:layout_row="1"
+            tools:maxWidth="75dp" />
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/puzzle_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <TextView
+        android:id="@+id/puzzle_instruct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/clickTile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/puzzle_solveBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:onClick="solve"
+        android:text="@string/solve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/puzzle_message" />
+
+    <Button
+        android:id="@+id/puzzle_NextBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="next"
+        android:text="@string/next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_solveBTN" />
+
+    <Button
+        android:id="@+id/puzzle_ResetBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="reset"
+        android:text="@string/reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/puzzle_NextBTN" />
+
+    <TextView
+        android:id="@+id/puzzle_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/puzzle_NextBTN"
+        app:layout_constraintTop_toTopOf="@+id/puzzle_solveBTN" />
+
+</android.support.constraint.ConstraintLayout>
